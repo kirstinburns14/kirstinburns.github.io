@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Your Name</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #0077ff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      max-width: 700px;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <h1>About Me</h1>
+  </header>
+
+  <section class="content">
+    <p>
+      I’m <strong>Your Name</strong>, a multidisciplinary creative passionate about blending design,
+      technology, and storytelling to craft meaningful digital experiences. 
+    </p>
+    <p>
+      My background spans creative strategy, branding, and front-end design — 
+      helping ideas come to life visually and emotionally. I believe great work 
+      starts with empathy, curiosity, and a willingness to experiment.
+    </p>
+    <p>
+      When I’m not designing or building, you’ll find me exploring new creative tools,
+      curating playlists, or wandering through art galleries for inspiration.
+    </p>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
