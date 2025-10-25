@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fafafa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #666;
+      margin-top: 0;
+    }
+
+    .about {
+      max-width: 600px;
+      text-align: center;
+      margin: 2rem auto;
+      line-height: 1.6;
+    }
+
+    .projects {
+      max-width: 800px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .project {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project h3 {
+      margin-top: 0;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #0077ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Your Name</h1>
+    <h2>Designer • Developer • Creator</h2>
+  </header>
+
+  <section class="about">
+    <p>
+      Hi! I’m a creative professional passionate about building digital experiences that are simple,
+      beautiful, and purposeful. I love blending strategy and storytelling to create work that connects.
+    </p>
+  </section>
+
+  <section class="projects">
+    <div class="project">
+      <h3>✨ Project One</h3>
+      <p>A short description of your first project. What problem did you solve or what makes it special?</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h3>🎨 Project Two</h3>
+      <p>Another quick description. Keep it simple and conversational — people like authenticity.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project">
+      <h3>🚀 Project Three</h3>
+      <p>Highlight your role, tools used, or outcome. Use this section to showcase your favorite work.</p>
+      <a href="#">View Project →</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Kirstin Burns — Built with ❤️ using GitHub Pages</p>
+  </footer>
+
+  <script>
+    // Auto-update copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
